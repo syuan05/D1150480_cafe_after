@@ -299,7 +299,6 @@ https://www.tooplate.com/view/2121-wave-cafe
       const tempVidHeight = windowWidth * vidHeight / vidWidth;
       const newVidWidth = tempVidWidth > windowWidth ? tempVidWidth : windowWidth;
       const newVidHeight = tempVidHeight > windowHeight ? tempVidHeight : windowHeight;
-      const tmVideo = $('#tm-video');
 
       tmVideo.css('width', newVidWidth);
       tmVideo.css('height', newVidHeight);
@@ -373,8 +372,7 @@ https://www.tooplate.com/view/2121-wave-cafe
         timeout = setTimeout(setVideoSize, 100);
       };
 
-      // Play/Pause button for video background
-      const btn = $("#tm-video-control-button");
+
 
       btn.on("click", function(e) {
         const video = document.getElementById("tm-video");
